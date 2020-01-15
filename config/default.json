@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://itsbhatt:password@123@mern-devconnector-pdswr.mongodb.net/test?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://itsbhatt:password@123@mern-devconnector-pdswr.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtToken": "mysecrettoken"
 }
