@@ -58,18 +58,19 @@ router.post(
       youtube,
       facebook,
       instagram,
-      linkedin
+      linkedin,
+      twitter
     } = req.body;
 
     const profileFields = {};
     profileFields.user = req.user.id;
     if (company) profileFields.company = company;
-    if (education) profileFields.company = company;
-    if (location) profileFields.company = company;
-    if (website) profileFields.company = company;
-    if (bio) profileFields.company = company;
-    if (status) profileFields.company = company;
-    if (githubusername) profileFields.company = company;
+    if (education) profileFields.education = education;
+    if (location) profileFields.location = location;
+    if (website) profileFields.website = website;
+    if (bio) profileFields.bio = bio;
+    if (status) profileFields.status = status;
+    if (githubusername) profileFields.githubusername = githubusername;
     if (skills) {
       profileFields.skills = skills.split(',').map(skill => skill.trim());
     }
@@ -80,8 +81,8 @@ router.post(
     if (facebook) profileFields.social.facebook = facebook;
     if (instagram) profileFields.social.instagram = instagram;
     if (linkedin) profileFields.social.linkedin = linkedin;
+    if (twitter) profileFields.social.twitter = twitter;
 
-    res.send('Hello');
     try {
       let profile = await Profile.findOne({ user: req.user.id });
       if (profile) {
