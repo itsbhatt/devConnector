@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://itsbhatt:password@123@mern-devconnector-pdswr.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtToken": "mysecrettoken",
+  "githubCID": "41f494b1c1c4e0cd3e70",
+  "githubSecret": "858aca74575f74a11adf15206185d950496340d1"
+}
