@@ -1,0 +1,6 @@
+{
+  "mongoURI": "mongodb+srv://<username>:<password>@mern-devconnector-pdswr.mongodb.net/test?retryWrites=true&w=majority",
+  "jwtToken": "mysecrettoken",
+  "githubCID": "dummy",
+  "githubSecret": "dummy"
+}
