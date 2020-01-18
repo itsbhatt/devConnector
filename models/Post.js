@@ -31,7 +31,7 @@ const PostSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'users'
       },
-      test: {
+      text: {
         type: String,
         required: true
       },
